@@ -1,0 +1,320 @@
+.hero {
+    width: 100vw;
+    box-sizing: border-box;
+    padding-inline: 15rem;
+    padding-bottom: 10rem;
+}
+
+.hero-section-con {
+    display: flex;
+    box-sizing: border-box;
+}
+.hero-section-con > * {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.hero-img-con {
+    position: relative;
+    height: 100vh;
+}
+.hero-main-img {
+    position: relative;
+
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: translate(0%, 10%);
+
+}
+.hero-main-img > img {
+    position: absolute;
+}
+.grain-texture {
+    opacity: 0.1;
+    mix-blend-mode: overlay;
+}
+.hero-girl {
+    border-radius: 50%;
+    z-index: 3;
+    transform: translate(3%, 3%);
+}
+
+.hero-card-1 {
+    position: absolute;
+    padding-inline: 0.5rem;
+    padding-block: 0.3rem;
+    box-sizing: border-box;
+    top: 0;
+
+    z-index: 10;
+
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+
+    column-gap: 0.6rem;
+
+    background-color: #fff;
+
+    border-radius: 0.7rem;
+    color: #090909;
+
+    transform: translate(170%, 120%);
+
+    box-shadow: 29.619px 42.314px 33.851px 0px rgba(0, 0, 0, 0.10); 
+}
+.hero-card-1 > * {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-self: center;
+    /* justify-self: center; */
+
+}
+.hero-card-1 > img {
+    width: 3rem;
+}
+.hero-card-text {
+    font-family: 'Lufga-bold';
+    font-size: 1rem;
+    font-weight: bold;
+}
+.bold-number {
+    font-family: 'Lufga-bold';
+    font-weight: 700;
+    font-size: 2.3rem;
+    margin: 0;
+}
+
+.hero-card-1 > p {
+
+    color: #5A5A5A;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+}
+
+.hero-card-2 {
+    position: absolute;
+    top: 33rem;
+    left: 0rem;
+
+    background-color: #fff;
+    width: 15rem;
+    padding: 1.06rem;
+    box-shadow: -16.925px 42.314px 32.793px 0px rgba(0, 0, 0, 0.07);     
+    border-radius: 0.8rem;
+}
+.hero-card-2 > * {
+    margin: 0;
+    padding: 0;
+}
+.card-2-section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-2-section-1 > section {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+}
+.card-2-section-1 > section > img {
+    width: 1.85119rem;
+    height: 1.85119rem;
+}
+.hero-card-2 > section > p {
+    color: #646464;
+    font-family: Lufga;
+    font-size: 0.66113rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; 
+    margin: 0;
+}
+.percent-oval {
+    border-radius: 1.58675rem;
+    background: rgba(178, 223, 174, 0.50);
+    padding-inline: 0.4rem;
+}
+.percent-oval > p {
+    margin: 0;
+}
+
+.youtube {
+    position: absolute;
+    top: 18rem;
+    left: 7rem;
+
+    height: 5.2rem;
+    width: 5.2rem;
+
+    background-color: #f00;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tik-tok {
+    position: absolute;
+    top: 8rem;
+    left: 14rem; 
+}
+.snapchat {
+    position: absolute;
+    top: 18rem;
+    left: 30rem;
+}
+.twitter {
+    position: absolute;
+    top: 35rem;
+    left: 30rem;
+    z-index: 10;
+}
+.Instagram {
+    position: absolute;
+    top: 40rem;
+    left: 10rem;
+}
+.brows {
+    position: absolute;
+    top: 31rem;
+    left: -3rem;
+}
+
+
+
+
+/*   hero text */
+
+.hero-text-con {
+    padding-top: 10rem;
+}
+.hero-text-heading-con {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    width: -moz-fit-content;
+    width: fit-content; 
+
+    padding: 0.5rem;
+    padding-inline: 1.5rem;
+
+    border-radius: 2rem;    
+    background-color: #fff;
+
+    font-family: 'Lufga-bold';
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase; 
+
+    position: relative;
+
+}
+.hero-text-heading-con::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -1;
+    background: linear-gradient(to right, #00B4FF, #00F100);
+    border-radius: 2rem; /* Set the border radius */
+}
+.hero-text-heading-con:hover {
+    background-color: rgba(0,0,0,0);
+}
+
+
+.hero-text-banner {
+    width: 100%;
+}
+.hero-text-banner-text {
+    color: var(--black, #121212);
+    font-family: 'Lufga-bold';
+    font-size: 4.25rem;
+    /* font-style: normal; */
+    font-weight: 800;
+    line-height: 112%; /* 4.76rem */ 
+    margin-block: 2rem;
+}
+.blue-italic {
+    color: #00B4FF;
+    font-style: italic; 
+}
+
+.hero-text-caption {
+    padding:0;
+    margin: 0;
+    color: var(--black, #121212);
+    font-family: Lufga;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem; /* 160% */ 
+}
+.hero-btn {
+
+    color: var(--black, #121212);
+    font-family: 'Lufga-bold';
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem; /* 160% */ 
+
+    border-radius: 0.625rem;
+    background: var(--ads-primary-2, #00F100);
+
+    display: flex;
+
+    padding-block: 0.6rem;
+    padding-inline: 2.5rem;
+
+    gap: 1.25rem;
+
+    margin-block: 2.5rem;
+
+
+
+}
+
+.hero-btn > * {
+    margin: 0;
+}
+.hero-btm-cards-con {
+    display: flex;
+    gap: 3rem;
+}
+.hero-btm-card > h1 {
+    color: var(--black, #121212);
+    font-family: 'Lufga-bold';
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2rem; /* 160% */ 
+    margin-block: 0.5rem;
+}
+.hero-btm-cards > p {
+    color: #121212;
+    font-family: Lufga;
+    font-size: 0.8125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.0325rem;
+    text-transform: uppercase;  
+}
